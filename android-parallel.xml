@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AndroidNativeSuite" verbose="1" parallel="tests" thread-count="2">
+    <test name="Run Pixel">
+        <parameter name="platform" value="Android 7.1.1"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="8200"/>
+        <parameter name="avd" value="Pixel"/>
+        <classes>
+            <class name="com.appium.demo04.parallel.AndroidTest" />
+        </classes>
+    </test>
+
+    <test name="Run Nexus">
+        <parameter name="platform" value="Android 7.1.1"/>
+        <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="8201"/>
+        <parameter name="avd" value="Nexus"/>
+        <classes>
+            <class name="com.appium.demo04.parallel.AndroidTest" />
+        </classes>
+    </test>
+</suite>

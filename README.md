@@ -1,1 +1,2 @@
-# STP_Advanced_Appium_Workshop
+# STP Conf 2018, Manila
+# Adavanced Appium Workshop
